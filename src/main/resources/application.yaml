@@ -1,0 +1,30 @@
+bot:
+  name: norman_wbot
+  token:
+  path:
+  id:
+  admin:
+  helper-username:
+  channel:
+  family: 1
+
+server:
+  port: 5000
+  tomcat:
+    max-threads: 30
+
+spring:
+  datasource:
+    url:
+    username: gen_user
+    password:
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      idle-timeout: 600000
+      max-lifetime: 900000
+
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
